@@ -1,0 +1,100 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 16px;
+    font-weight: 400;
+}
+input{
+    border: none;
+}
+input::placeholder{
+    color: black;
+}
+input:focus{
+    border: 1px solid black;
+}
+b,strong{
+    font-weight: 400;
+}
+ul,ol{
+    
+}
+li{
+    list-style: none;
+}
+/*  */
+
+
+
+
+
+
+
+
+
+
+.nav{
+    padding: 10px;
+    background: yellow;
+    display: flex
+}
+.logo{
+    cursor: pointer;
+    width:50px ;
+    height: 50px;
+    border-radius: 50px;
+    
+}
+.nav-info{
+    margin: 0 auto;
+    align-items: center;
+    display: flex; 
+    gap: 100px; 
+}
+.profile-icon {
+    cursor: pointer;
+    width:30px ;
+    height: 30px;
+}
+.shop-icon{
+    cursor: pointer;
+    width:30px ;
+    height: 30px;
+    margin-left: 50px;
+    margin-right: 75px;
+}
+#Product{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+}
+.box {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border: 1px solid black;
+    text-align: center;
+    width: 277px ;
+    height: 350px;
+}
+.img {
+}
+.name {
+}
+.brand {
+}
+.price {
+    color: rgb(4, 52, 1);
+}
+.buy-btn {
+    border: none;
+    background: green;
+    width: 75PX;
+    border-radius: 20PX;
+    cursor: pointer;
+}

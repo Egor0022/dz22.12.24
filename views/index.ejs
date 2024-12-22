@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+ 
+    <nav class="nav" >
+        <img class="logo" src="/photo.jpeg " alt="">
+        <ul class="nav-info">
+            <% navname.forEach((el) => { %>
+                <li><a href=""><%= el %></a></li>
+            <% }) %>
+        </ul>
+        <img class="profile-icon" src="profile.png" alt="">
+        <img class="shop-icon" src="shop.png" alt="">
+    </nav>
+
+    <div id="Product">
+        <% products.forEach(product => { %>
+            <div class="box">
+                <img src="photo.jpeg" alt="" class="img">
+                <h3 class="name"><%= product.name %></h3>
+                <p class="brand"><%= product.brand %></p>
+                <p class="price"><%= product.price %> ₴</p>
+                <button class="buy-btn" onclick="location.href='/iphon'" data-price="<%= product.price %>">Купити</button>
+            </div>
+        <% }); %>
+    </div>
+    
+
+
+
+
+</body>
+
+</html>
